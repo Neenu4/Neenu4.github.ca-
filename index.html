@@ -14,26 +14,26 @@
     <script>
         $(document).ready(function () {
 
-            //Button clicks then prompt uer to ask the user name
+            //prompt user to ask the user name
             $("#btnClick").on("click", function () {
                 var person = prompt("Please enter your name");
-                //Fetch the user name set it to the tag so it will show on the web site
+                //enter user name set it to the tag so it will show on the web site
                 $("#spUserName").html(" Welcome " + person + " !!!!");
             });
 
             //When user clicked on Image, then Dialog box will open with Enlarge of image
-            $('#imgCupCake').on("click", function () {
+            $('#imgHijabigirlsmile').on("click", function () {
                 $("#dialog").dialog();
                 
             });
 
-            //mouse over event on navigatin bar
+            //mouse hover on bar
             $(".nav").on("mouseover", function () {
                 //set parent div background color - grey
                 $(this).parent().css("background-color", "grey");
             })
 
-             //mouse out event on navigatin bar
+             //mouse hover off bar"
             $(".nav").on("mouseout", function () {
                 //set parent div background color - Yellow
                 $(this).parent().css("background-color", "yellow");
@@ -126,8 +126,7 @@
                 width: 0;
                 border: 5px solid transparent;
                 top: 50%;
-                right: 5px;
-            }
+                right: 5px }
 
             /* menu positioning*/
             .nav ul {
@@ -135,41 +134,40 @@
                 white-space: nowrap;
                 border-bottom: 5px solid orange;
                 z-index: 1;
-                left: -99999em;
-            }
+                left: -99999em; }
 
-            .nav > li:hover > ul {
+            .nav > li:hover > ul 
+            {
                 left: auto;
                 margin-top: 5px;
-                min-width: 100%;
-            }
+                min-width: 100%; }
 
-            .nav > li li:hover > ul {
+            .nav > li li:hover > ul 
+            {
                 left: 100%;
                 margin-left: 1px;
-                top: -1px;
-            }
+                top: -1px;   }
             /* arrow hover styling */
-            .nav > li > a:first-child:nth-last-child(2):before {
-                border-top-color: #aaa;
-            }
+            .nav > li > a:first-child:nth-last-child(2):before
+             {
+                border-top-color: #aaa;}
 
-            .nav > li:hover > a:first-child:nth-last-child(2):before {
+            .nav > li:hover > a:first-child:nth-last-child(2):before
+             {
                 border: 5px solid transparent;
                 border-bottom-color: orange;
-                margin-top: -5px
-            }
+                margin-top: -5px }
 
-            .nav li li > a:first-child:nth-last-child(2):before {
+            .nav li li > a:first-child:nth-last-child(2):before
+             {
                 border-left-color: #aaa;
-                margin-top: -5px
-            }
+                margin-top: -5px }
 
-            .nav li li:hover > a:first-child:nth-last-child(2):before {
+            .nav li li:hover > a:first-child:nth-last-child(2):before 
+            {
                 border: 5px solid transparent;
-                border-right-color: orange;
-                right: 10px;
-            }
+                border-right-color: rgb(248, 228, 4);
+                right: 10px; }
     </style>
 <body>
 
@@ -189,7 +187,6 @@
             <li>
                 <a href="#">contact</a>
                 <ul>
-                    <li><a href="#">item a lonng submenu</a></li>
                     <li>
                         <a href="#">Email</a></li>
                     <li><a href="#">Numnber</a></li>
@@ -200,7 +197,7 @@
     </nav>
 
     <div id="divHeading">
-        <h1 id="spUserName" style="color:dimgrey"></h1>
+        <h1 id="spUserName" style="color:rgb(95, 91, 91)"></h1>
     </div>
     <button value="Click Me" id="btnClick" style="height:30px;width:100px">Click Me</button>
 
