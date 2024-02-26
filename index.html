@@ -5,6 +5,213 @@
     <title>Aleena Jilani Portfolio Website</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+          rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            //Button clicks then prompt uer to ask the user name
+            $("#btnClick").on("click", function () {
+                var person = prompt("Please enter your name");
+                //Fetch the user name set it to the tag so it will show on the web site
+                $("#spUserName").html(" Welcome " + person + " !!!!");
+            });
+
+            //When user clicked on Image, then Dialog box will open with Enlarge of image
+            $('#imgCupCake').on("click", function () {
+                $("#dialog").dialog();
+                
+            });
+
+            //mouse over event on navigatin bar
+            $(".nav").on("mouseover", function () {
+                //set parent div background color - grey
+                $(this).parent().css("background-color", "grey");
+            })
+
+             //mouse out event on navigatin bar
+            $(".nav").on("mouseout", function () {
+                //set parent div background color - Yellow
+                $(this).parent().css("background-color", "yellow");
+            })
+        });
+    </script>
+   
+    <!--Navigation bar styles-->
+    <style>
+        nav {
+            display: block;
+            text-align: center;
+        }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+        .nav a {
+            display: block;
+            background: #111;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.8em 1.8em;
+            text-transform: uppercase;
+            font-size: 80%;
+            letter-spacing: 2px;
+            text-shadow: 0 -1px 0 #000;
+            position: relative;
+        }
+
+        .nav {
+            vertical-align: top;
+            display: inline-block;
+            box-shadow: 1px -1px -1px 1px #000, -1px 1px -1px 1px #fff, 0 0 6px 3px #fff;
+            border-radius: 6px;
+        }
+
+            .nav li {
+                position: relative;
+            }
+
+            .nav > li {
+                float: left;
+                border-bottom: 4px #aaa solid;
+                margin-right: 1px;
+            }
+
+                .nav > li > a {
+                    margin-bottom: 1px;
+                    box-shadow: inset 0 2em .33em -0.5em #555;
+                }
+
+                .nav > li:hover,
+                .nav > li:hover > a {
+                    border-bottom-color: orange;
+                }
+
+            .nav li:hover > a {
+                color: orange;
+            }
+
+            .nav > li:first-child {
+                border-radius: 4px 0 0 4px;
+            }
+
+                .nav > li:first-child > a {
+                    border-radius: 4px 0 0 0;
+                }
+
+            .nav > li:last-child {
+                border-radius: 0 0 4px 0;
+                margin-right: 0;
+            }
+
+                .nav > li:last-child > a {
+                    border-radius: 0 4px 0 0;
+                }
+
+            .nav li li a {
+                margin-top: 1px;
+            }
+
+            .nav li a:first-child:nth-last-child(2):before {
+                content: "";
+                position: absolute;
+                height: 0;
+                width: 0;
+                border: 5px solid transparent;
+                top: 50%;
+                right: 5px;
+            }
+
+            /* menu positioning*/
+            .nav ul {
+                position: absolute;
+                white-space: nowrap;
+                border-bottom: 5px solid orange;
+                z-index: 1;
+                left: -99999em;
+            }
+
+            .nav > li:hover > ul {
+                left: auto;
+                margin-top: 5px;
+                min-width: 100%;
+            }
+
+            .nav > li li:hover > ul {
+                left: 100%;
+                margin-left: 1px;
+                top: -1px;
+            }
+            /* arrow hover styling */
+            .nav > li > a:first-child:nth-last-child(2):before {
+                border-top-color: #aaa;
+            }
+
+            .nav > li:hover > a:first-child:nth-last-child(2):before {
+                border: 5px solid transparent;
+                border-bottom-color: orange;
+                margin-top: -5px
+            }
+
+            .nav li li > a:first-child:nth-last-child(2):before {
+                border-left-color: #aaa;
+                margin-top: -5px
+            }
+
+            .nav li li:hover > a:first-child:nth-last-child(2):before {
+                border: 5px solid transparent;
+                border-right-color: orange;
+                right: 10px;
+            }
+    </style>
+<body>
+
+    <nav>
+        <ul class="nav">
+
+            <li>
+                <a href="PromptUserName.html">about me </a>
+                <ul>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">experiences</a></li>
+                    <li><a href="#">skills</a></li>
+                    <li><a href="#"></a>certificates</li>
+                </ul>
+            </li>
+            <li> <a href="PromptUserName.html">main page</a></li>
+            <li>
+                <a href="#">contact</a>
+                <ul>
+                    <li><a href="#">item a lonng submenu</a></li>
+                    <li>
+                        <a href="#">Email</a></li>
+                    <li><a href="#">Numnber</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="divHeading">
+        <h1 id="spUserName" style="color:dimgrey"></h1>
+    </div>
+    <button value="Click Me" id="btnClick" style="height:30px;width:100px">Click Me</button>
+
+    <div>
+        <img src="C:\Users\aleen\Downloads\hijabigirlsmile.jpg" id="imghijabigirlsmile" style="height:200px;width:300px" />
+    </div>
+
+    <div id="dialog" style="display: none; ">
+        <img src="C:\Users\aleen\Downloads\hijabigirlsmile.jpg"> 
+    </div>
+</body>
     </head>
     <body>
         <h2>Aleena Jilani Portfolio</h2>
