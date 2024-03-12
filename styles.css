@@ -1,14 +1,52 @@
 
     body {
         background-color: #ffffff;
-        color: #1b067a;
+        color: rgb(127, 14, 110);
         margin: 20pt;
         font-family: Arial, sans-serif; 
         font-size: 12pt; }
+
+        #form-container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        #form-container h2 {
+            color: #333;
+        }
+        
+        #form-container label {
+            font-weight: bold;
+            color: #555;
+        }
+        
+        #form-container input[type=text],
+        #form-container input[type=email],
+        #form-container select,
+        #form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        #form-container button {
+            width: 100px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius}
             
     h2 {
         font-family: "Arial", sans-serif;
-        color: #054869; 
+        color: rgb(127, 14, 110); 
         width: 100%;
         margin: 0;
         font-size: 24pt; 
@@ -16,7 +54,7 @@
             
     h3 {
         font-family: "Tahoma", sans-serif;
-        color: #f59505; 
+        color:rgb(127, 14, 110); 
         font-size: 14pt; 
         font-weight: bold;     }
 
@@ -43,9 +81,44 @@
         .description-wrapper h2 {
             margin-top: 50;
         }
-    nav a:link { color: #0a21f2; }
-    nav a:visited { color: #0591f6; font: italic}
-    nav a:hover { color: #fa7006; }
-
-
-
+    nav a:link { color:cadetblue; }
+    nav a:visited { color: aqua; font: italic}
+    nav a:hover { color: beige; }
+    #form-container {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    #form-container h2 {
+        color: #333;
+    }
+    
+    #form-container label {
+        font-weight: bold;
+        color: #555;
+    }
+    
+    #form-container input[type=text],
+    #form-container input[type=email],
+    #form-container select,
+    #form-container textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    #form-container button {
+        width: 100px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius
+    

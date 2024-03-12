@@ -56,14 +56,14 @@
 
         .nav a {
             display: block;
-            background: #111;
+            background: #0a0a0a;
             color: #fff;
             text-decoration: none;
             padding: 0.8em 1.8em;
             text-transform: uppercase;
             font-size: 80%;
             letter-spacing: 2px;
-            text-shadow: 0 -1px 0 #000;
+            text-shadow: 0 -1px 0 #ae01f2;
             position: relative;
         }
 
@@ -86,16 +86,16 @@
 
                 .nav > li > a {
                     margin-bottom: 1px;
-                    box-shadow: inset 0 2em .33em -0.5em #3d3131;
+                    box-shadow: inset 0 2em .33em -0.5em #555;
                 }
 
                 .nav > li:hover,
                 .nav > li:hover > a {
-                    border-bottom-color:  rgb(62, 14, 120)
+                    border-bottom-color: orange;
                 }
 
             .nav li:hover > a {
-                color: rgb(133, 25, 126);;
+                color: orange;
             }
 
             .nav > li:first-child {
@@ -132,7 +132,7 @@
             .nav ul {
                 position: absolute;
                 white-space: nowrap;
-                border-bottom: 5px solid  rgb(159, 13, 140);
+                border-bottom: 5px solid orange;
                 z-index: 1;
                 left: -99999em; }
 
@@ -155,7 +155,7 @@
             .nav > li:hover > a:first-child:nth-last-child(2):before
              {
                 border: 5px solid transparent;
-                border-bottom-color:  rgb(159, 13, 140);
+                border-bottom-color: orange;
                 margin-top: -5px }
 
             .nav li li > a:first-child:nth-last-child(2):before
@@ -197,7 +197,7 @@
     </nav>
 
     <div id="divHeading">
-        <h1 id="spUserName" style="color:rgb(121, 11, 127)"></h1>
+        <h1 id="spUserName" style="color:rgb(95, 91, 91)"></h1>
     </div>
     <button value="Click Me" id="btnClick" style="height:30px;width:100px">Click Me</button>
 
@@ -213,36 +213,7 @@
     <body>
         <h2>Aleena Jilani Portfolio</h2>
     <div class="container">
-        <div id="form-container" style="margin-top: 20px;">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label>Gender:</label><br>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                <label for="interests">Interests:</label><br>
-                <input type="checkbox" id="tech" name="interests" value="technology">
-                <label for="tech">Technology</label>
-                <input type="checkbox" id="business" name="interests" value="business">
-                <label for="business">Business</label><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-                <label for="experience">Experience with our service:</label><br>
-                <select id="experience" name="experience">
-                    <option value="excellent">Excellent</option>
-                    <option value="good">Good</option>
-                    <option value="fair">Fair</option>
-                    <option value="poor">Poor</option>
-                </select><br>
-                <button type="button" id="submitForm">Submit</button>
-                <button type="reset" id="resetForm">Clear</button>
-            </form>
-        </div>
+       
         <table width="100000px" border="1px">
             <tr>
                 <td>
