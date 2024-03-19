@@ -1,124 +1,89 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
 
-    body {
-        background-color: #ffffff;
-        color: rgb(127, 14, 110);
-        margin: 20pt;
-        font-family: Arial, sans-serif; 
-        font-size: 12pt; }
 
-        #form-container {
-            background-color: #f2f2f2;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        
-        #form-container h2 {
-            color: #333;
-        }
-        
-        #form-container label {
-            font-weight: bold;
-            color: #555;
-        }
-        
-        #form-container input[type=text],
-        #form-container input[type=email],
-        #form-container select,
-        #form-container textarea {
-            width: 100%;
-            padding: 8px;
-            margin: 10px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        
-        #form-container button {
-            width: 100px;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius}
-            
-    h2 {
-        font-family: "Arial", sans-serif;
-        color: rgb(127, 14, 110); 
-        width: 100%;
-        margin: 0;
-        font-size: 24pt; 
-        font-weight: bold;  }
-            
-    h3 {
-        font-family: "Tahoma", sans-serif;
-        color:rgb(127, 14, 110); 
-        font-size: 14pt; 
-        font-weight: bold;     }
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0; /* Adjust the padding to control the vertical space */
+  background-image: url('background.jpg'); /* Your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-        .container {
-            width: 100%;
-            margin: 0 auto;
-        }
-        
-        table {
-            width: 100%;
-        }
-        
-        .text-wrapper,
-        .description-wrapper {
-            padding: 10px;
-        }
-        
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .text-wrapper h2,
-        .description-wrapper h2 {
-            margin-top: 50;
-        }
-    nav a:link { color:cadetblue; }
-    nav a:visited { color: aqua; font: italic}
-    nav a:hover { color: beige; }
-    #form-container {
-        background-color: #f2f2f2;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    
-    #form-container h2 {
-        color: #333;
-    }
-    
-    #form-container label {
-        font-weight: bold;
-        color: #555;
-    }
-    
-    #form-container input[type=text],
-    #form-container input[type=email],
-    #form-container select,
-    #form-container textarea {
-        width: 100%;
-        padding: 8px;
-        margin: 10px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    
-    #form-container button {
-        width: 100px;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius
-    
+.profile-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  /* Removed background-specific properties */
+}
+
+  
+  .profile-content {
+    padding: 20px;
+  }
+  
+  .location-image {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    background-image: url('IMG_6688.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  
+  .name {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+  
+  .location, .social-links {
+    margin: 10px 0;
+  }
+  
+  .social-links {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  
+  .social-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .social-links li a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .about-me, .resume {
+    margin-top: 40px;
+  }
+  
+  .about-me-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .description, .resume {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  

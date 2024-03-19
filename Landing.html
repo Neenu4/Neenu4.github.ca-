@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aleena Jilani Portfolio</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+.portfolio-title{
+  font-size: 2em;
+  width: 80%;
+  position: center;
+  color: #100c11;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  .bg {
+    background-image: url("tulipbgd.jpg");
+    height: 80%;
+    width: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    border-radius: 20px; /* Rounded corners */
+    margin: 10% auto; /* Centering the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  @keyframes flowyMovement {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .greeting {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: flowyMovement 2s ease forwards;
+    opacity: 0; /* Start the animation with the text fully transparent */
+  }
+  .learn-more {
+    display: inline-block;
+    background-color: #8084887a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    opacity: 0;
+    animation: flowyMovement 2s ease 2s forwards; /* Delay the animation so it starts after the greeting */
+  }
+  .learn-more:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="portfolio-title">MyPersonalPortfolio</div> 
+<div class="centered-text"></div>
+
+
+<div class="bg">
+  <div class="centered-text">
+    <div class="greeting" id="greeting"></div>
+    <a href="Profilepage.html" class="learn-more">Learn More</a>
+  </div>
+</div>
+
+<script>
+  const portfolioTitle = document.querySelector('.portfolio-title');
+  const greetingText = "Hey There, I'm Aleena Jilani";
+  let i = 0;
+  function typeWriter() {
+    if (i < greetingText.length) {
+      document.getElementById("greeting").innerHTML += greetingText.charAt(i);
+      i++;
+      setTimeout(typeWriter, 100);
+    }
+  }
+  window.onload = function() {
+    typeWriter();
+  };
+</script>
+
+</body>
+</html>
+
